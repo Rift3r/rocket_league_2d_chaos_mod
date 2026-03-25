@@ -274,7 +274,7 @@ function playAgain() {
 }
 
 // FPS SETTING
-var FPS = 60;
+var FPS = 120;
 setInterval(function() {
   update();
   requestAnimationFrame(draw);
