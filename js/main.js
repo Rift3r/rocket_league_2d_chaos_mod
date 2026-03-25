@@ -167,7 +167,7 @@ KeyboardController({
   // A
     65: function() { players[0].rot -= 10; },
   // W
-    87: function() { players[0].vel < 150 ? players[0].vel += 15 : players[0].vel = players[0].vel; },
+    87: function() { players[0].vel < 150 ? players[0].vel += 30 : players[0].vel = players[0].vel; },
   // D
     68: function() { players[0].rot += 10; },
   // S
@@ -200,8 +200,8 @@ function carFriction(friction) {
 
 // SPEED DECAY FUNCTION CALL
 setInterval(function() {
-  ballFriction(.2);
-  carFriction(.1);
+  ballFriction(.0001);
+  carFriction(.0001);
 }, 500);
 
 // TIMER ACTION
