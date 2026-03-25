@@ -8,8 +8,8 @@ var canvas = canvasElement.get(0).getContext("2d");
 canvasElement.appendTo('body');
 var players = [];
 var scoreOrange = 0;
-var scoreBlue = 0;
-var timerCount = 120; // 2 Minute Time Limit
+var scoreBlue = 15;
+var timerCount = 240; // 4 Minute Time Limit
 var timerID;
 
 // DRAW
