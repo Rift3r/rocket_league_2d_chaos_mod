@@ -8,7 +8,7 @@ var canvas = canvasElement.get(0).getContext("2d");
 canvasElement.appendTo('body');
 var players = [];
 var scoreOrange = 0;
-var scoreBlue = 15;
+var scoreBlue = 0;
 var timerCount = 240; // 4 Minute Time Limit
 var timerID;
 
@@ -167,7 +167,7 @@ KeyboardController({
   // A
     65: function() { players[0].rot -= 10; },
   // W
-    87: function() { players[0].vel < 4 ? players[0].vel += .15 : players[0].vel = players[0].vel; },
+    87: function() { players[0].vel < 150 ? players[0].vel += 15 : players[0].vel = players[0].vel; },
   // D
     68: function() { players[0].rot += 10; },
   // S
