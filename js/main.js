@@ -167,20 +167,20 @@ KeyboardController({
   // A
     65: function() { players[0].rot -= 15; },
   // W
-    87: function() { players[0].vel < 20 ? players[0].vel += 10 : players[0].vel = players[0].vel; },
+    87: function() { players[0].vel < 30 ? players[0].vel += 2 : players[0].vel = players[0].vel; },
   // D
     68: function() { players[0].rot += 15; },
   // S
-    83: function() { players[0].vel > -5 ? players[0].vel -= .5 : players[0].vel = players[0].vel; },
+    83: function() { players[0].vel > -30 ? players[0].vel -= 2 : players[0].vel = players[0].vel; },
   // PLAYER 2 CONTROLS
   // left
     37: function() { players[1].rot -= 15; },
   // up
-    38: function() { players[1].vel < 15 ? players[1].vel += .5 : players[1].vel = players[1].vel; },
+    38: function() { players[1].vel < 30 ? players[1].vel += 2 : players[1].vel = players[1].vel; },
   // right
     39: function() { players[1].rot += 15; },
   // down
-    40: function() { players[1].vel > -5 ? players[1].vel -= .5 : players[1].vel = players[1].vel; },
+    40: function() { players[1].vel > -30 ? players[1].vel -= 2 : players[1].vel = players[1].vel; },
 }, 50);
 
 
